@@ -1,6 +1,7 @@
 <?php
 namespace Omnipay\Skrill\Message;
 
+use Omnipay\Common\Http\ResponseParser;
 use Omnipay\Tests\TestCase;
 
 class TransferResponseTest extends TestCase
@@ -8,7 +9,7 @@ class TransferResponseTest extends TestCase
     public function testTransferProcessed()
     {
         $httpResponse = $this->getMockHttpResponse('TransferProcessed.txt');
-        $response = new TransferResponse($this->getMockRequest(), $httpResponse->xml());
+        $response = new TransferResponse($this->getMockRequest(), ResponseParser::xml($httpResponse));
 
         $this->assertTrue($response->isSuccessful());
         $this->assertSame(20.12, $response->getAmount());

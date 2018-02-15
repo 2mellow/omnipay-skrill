@@ -1,7 +1,7 @@
 {
-    "name": "alfaproject/omnipay-skrill",
+    "name": "abdoub/omnipay-skrill",
     "type": "library",
-    "description": "Skrill driver for the Omnipay payment processing library",
+    "description": "Skrill driver for the Omnipay (3.0.x-dev) payment processing library",
     "keywords": [
         "gateway",
         "merchant",
@@ -10,12 +10,12 @@
         "pay",
         "payment"
     ],
-    "homepage": "https://github.com/alfaproject/omnipay-skrill",
+    "homepage": "https://github.com/abdoub/omnipay-skrill",
     "license": "MIT",
     "authors": [
         {
-            "name": "Joao Dias",
-            "email": "joao.dias@cherrygroup.com"
+            "name": "abdelilah benhima",
+            "email": "abdelilahbenhima@gmail.com"
         }
     ],
     "autoload": {
@@ -24,11 +24,11 @@
         }
     },
     "require": {
-        "omnipay/common": "~2.0"
+        "omnipay/common": "3.0.x-dev"
     },
     "require-dev": {
-        "omnipay/tests": "~2.0",
-        "satooshi/php-coveralls": "dev-master"
+        "omnipay/tests": "3.0.x-dev",
+        "satooshi/php-coveralls": "2.0.0"
     },
     "extra": {
         "branch-alias": {

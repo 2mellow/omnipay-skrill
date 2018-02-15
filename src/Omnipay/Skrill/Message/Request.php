@@ -2,6 +2,7 @@
 namespace Omnipay\Skrill\Message;
 
 use Omnipay\Common\Message\AbstractRequest;
+use Omnipay\Common\Http\ResponseParser;
 
 /**
  * Skrill Request
@@ -56,9 +57,9 @@ abstract class Request extends AbstractRequest
     public function sendData($data)
     {
         $url = $this->getEndpoint() . '?' . http_build_query($data);
-        $httpResponse = $this->httpClient->get($url)->send();
+        $httpResponse = $this->httpClient->get($url);
 
-        $xml = $httpResponse->xml();
+        $xml = ResponseParser::xml($httpResponse);
         return $this->createResponse($xml);
     }
 
