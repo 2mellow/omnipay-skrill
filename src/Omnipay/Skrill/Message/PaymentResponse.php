@@ -62,9 +62,10 @@ class PaymentResponse extends AbstractResponse implements RedirectResponseInterf
     public function getSessionId()
     {
 
-        return preg_match('([a-zA-Z=0-9]+)', $this->data->getHeader('Set-Cookie')[0], $matches)
-            ? $matches[0]
-            : null;
+        return preg_match('~SESSION_ID=([0-9a-fA-F]+)~', $this->data->getHeader('Set-Cookie')[0], $matches)
+            ? $matches[1]
+                : null;
+
     }
 
     /**
@@ -74,7 +75,7 @@ class PaymentResponse extends AbstractResponse implements RedirectResponseInterf
      */
     public function getStatus()
     {
-        return (string) null;
+        return (string) $this->data->getHeader('X-Skrill-Status');
     }
 
     /**

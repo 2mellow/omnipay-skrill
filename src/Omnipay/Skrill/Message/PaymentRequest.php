@@ -958,7 +958,7 @@ class PaymentRequest extends AbstractRequest
      */
     public function sendData($data)
     {
-        $httpResponse = $this->httpClient->post($this->getEndpoint(), [], $data);
+        $httpResponse = $this->httpClient->post($this->getEndpoint(), ['Content-type' => 'application/x-www-form-urlencoded'], $data);
 
         return $this->response = new PaymentResponse($this, $httpResponse);
     }
