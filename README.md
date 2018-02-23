@@ -1,7 +1,8 @@
 # Omnipay: Skrill
 
 **Skrill driver for the Omnipay PHP payment processing library**
-This a fork of xcaliber-tech/omnipay-skrill updated to work with omnipay version 3.0
+
+**This is a fork of xcaliber-tech/omnipay-skrill updated to work with omnipay version 3.0**
 
 [Omnipay](https://github.com/omnipay/omnipay) is a framework agnostic, multi-gateway payment
 processing library for PHP 5.3+. This package implements Skrill support for Omnipay.
