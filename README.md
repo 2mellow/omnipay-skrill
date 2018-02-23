@@ -27,7 +27,7 @@ to your `composer.json` file:
             "classmap": [""]
           }
         }
-    }]
+    }],
     "require": {
         "abdoub/omnipay-skrill": "dev-master"
     }
