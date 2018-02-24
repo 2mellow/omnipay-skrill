@@ -14,22 +14,7 @@ to your `composer.json` file:
 
 ```json
 {
-    "repositories": [{
-        "type": "package",
-        "package": {
-          "name": "abdoub/omnipay-skrill",
-          "version": "dev-master",
-          "source": {
-            "url": "https://github.com/AbdouB/omnipay-skrill.git",
-            "type": "git",
-            "reference": "master"
-          },
-          "autoload": {
-            "classmap": [""]
-          }
-        }
-    }],
-    "require": {
+    require": {
         "abdoub/omnipay-skrill": "dev-master"
     }
 }
