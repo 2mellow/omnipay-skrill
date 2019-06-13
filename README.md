@@ -15,7 +15,7 @@ to your `composer.json` file:
 ```json
 {
     "require": {
-        "abdoub/omnipay-skrill": "dev-master"
+        "2mellow/omnipay-skrill": "dev-master"
     }
 }
 ```
