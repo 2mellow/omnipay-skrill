@@ -1,5 +1,5 @@
 {
-    "name": "abdoub/omnipay-skrill",
+    "name": "2mellow/omnipay-skrill",
     "type": "library",
     "description": "Skrill driver for the Omnipay (3.0.x-dev) payment processing library",
     "keywords": [
@@ -10,12 +10,12 @@
         "pay",
         "payment"
     ],
-    "homepage": "https://github.com/abdoub/omnipay-skrill",
+    "homepage": "https://github.com/2mellow/omnipay-skrill",
     "license": "MIT",
     "authors": [
         {
-            "name": "abdelilah benhima",
-            "email": "abdelilahbenhima@gmail.com"
+            "name": "Brandon Fredericksen",
+            "email": "brandon@umggaming.com"
         }
     ],
     "autoload": {
